@@ -13,13 +13,15 @@ function App() {
 	const [showtime,setShowtime]=useState([]);
 	const [name,setName]=useState([]);
     const [cpf,setCpf]=useState([]);
+	const [ids,setIds]= useState([]);
+
   return (
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<MoviesPage />} />
 				<Route path="/sessoes/:idFilme" element={<ShowTimesPage />} />
-        		<Route path="/assentos/:idSessao" element={<SeatsPage title={title} setTitle={setTitle} date={date} setDate={setDate} showtime={showtime} setShowtime={setShowtime} name={name} setName={setName} cpf={cpf} setCpf={setCpf}/>} />
-        		<Route path="/sucesso" element={<SuccessPage title={title} setTitle={setTitle} date={date} setDate={setDate} showtime={showtime} setShowtime={setShowtime} name={name} setName={setName} cpf={cpf} setCpf={setCpf}/>} />
+        		<Route path="/assentos/:idSessao" element={<SeatsPage title={title} setTitle={setTitle} date={date} setDate={setDate} showtime={showtime} setShowtime={setShowtime} name={name} setName={setName} cpf={cpf} setCpf={setCpf} ids={ids} setIds={setIds}/>} />
+        		<Route path="/sucesso" element={<SuccessPage title={title} setTitle={setTitle} date={date} setDate={setDate} showtime={showtime} setShowtime={setShowtime} name={name} setName={setName} cpf={cpf} setCpf={setCpf} ids={ids} setIds={setIds}/>} />
 			</Routes>
 		</BrowserRouter>
 	);

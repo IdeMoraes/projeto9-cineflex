@@ -14,6 +14,8 @@ export default function SuccessPage(props) {
   const setName = props.setName;
   const cpf = props.cpf;
   const setCpf = props.setCpf;
+  const ids =props.ids;
+  const setIds = props.setIds;
     return (
       <>
         <Header/>
@@ -22,6 +24,7 @@ export default function SuccessPage(props) {
         <div>{title}</div>
         <div>{date} {showtime}</div>
         <div className="titulo-secao-sucesso">Ingressos</div>
+        {ids.map(id=> <div>Assento {id}</div>)}
         <div>Assento 15 Chumbado</div>
         <div>Assento 16 chumbado</div>
         <div className="titulo-secao-sucesso">Comprador</div>
@@ -29,7 +32,5 @@ export default function SuccessPage(props) {
         <div>CPF: {cpf}</div>
         <div className="voltar-para-home" onClick={()=>navigate("/")}>Voltar para Home</div>
       </>
-    );
-
-           
+    );      
   }

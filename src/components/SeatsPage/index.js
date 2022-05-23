@@ -20,9 +20,10 @@ export default function SeatsPage(props){
     const setName = props.setName;
     const cpf = props.cpf;
     const setCpf = props.setCpf;
+    const ids = props.ids;
+    const setIds = props.setIds;
     const [weekday,setWeekday]=useState([]);
     const [seats,setSeats]=useState([]);
-    const [ids,setIds]= useState([]);
     const navigate = useNavigate();
 
 
