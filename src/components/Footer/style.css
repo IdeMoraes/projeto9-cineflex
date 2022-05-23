@@ -1,0 +1,32 @@
+footer{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: #DFE6ED;
+    border: 1px solid #9EADBA;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer .chosen-movie-poster{
+    width: 64px;
+    height: 89px;
+    margin-left: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .chosen-movie-poster img{
+    width: 48px;
+    height: 72px;
+}
+footer .right{
+    font-size: 26px;
+    color: #293845;
+    margin-left: 14px;
+}
+.showtimes-page .chosen-showtime{
+    display: none;
+}

@@ -1,0 +1,40 @@
+.movies-page{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.step{
+    height: 102px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#293845;
+    font-size: 24px;
+}
+.in-theaters{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.in-theaters::after { /*Não entendi bem, mas resolveu o problema da última linha*/
+    content: "";
+    flex: auto;
+  }
+.movie-poster{
+    width: 145px;
+    height: 209px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 11px;
+}
+.movie-poster img{
+    width: 129px;
+    height: 193px;
+}
